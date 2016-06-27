@@ -10,4 +10,12 @@
 
 @implementation JxbIMUser
 
++ (instancetype)getUser:(NSString*)uid nick:(NSString*)nick iconUrl:(NSString*)iconUrl {
+    JxbIMUser* user = [[JxbIMUser alloc] init];
+    user.userId = uid;
+    user.userNick = nick;
+    user.iconUrl = iconUrl;
+    return user;
+}
+
 @end

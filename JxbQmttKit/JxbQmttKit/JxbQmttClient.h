@@ -57,6 +57,13 @@
 - (void)subscribe:(NSArray * __nonnull)topics;
 
 /**
+ *  取消订阅Topic
+ *
+ *  @param topics 同订阅
+ */
+- (void)unsubscribe:(NSArray * __nonnull)topics;
+
+/**
  *  发送文本消息
  *
  *  @param message 消息结构

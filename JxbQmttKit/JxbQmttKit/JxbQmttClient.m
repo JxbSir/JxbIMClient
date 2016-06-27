@@ -67,13 +67,17 @@
         if (code == ConnectionAccepted) {
             NSLog(@"JxbQmtt login success[%@]",wSelf.clientId);
             if (successBlock != NULL) {
-                successBlock();
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    successBlock();
+                });
             }
         }
         else {
             NSLog(@"JxbQmtt login failed[%@](%ld)",wSelf.clientId,(unsigned long)code);
             if (failureBlock != NULL) {
-                failureBlock((JxbConnectionCode)code);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    failureBlock((JxbConnectionCode)code);
+                });
             }
         }
     }];
@@ -96,6 +100,12 @@
 - (void)subscribe:(NSArray *)topics {
     for (NSString* topic in topics) {
         [self.client subscribe:topic withQos:ExactlyOnce completionHandler:nil];
+    }
+}
+
+- (void)unsubscribe:(NSArray *)topics {
+    for (NSString* topic in topics) {
+        [self.client unsubscribe:topic withCompletionHandler:nil];
     }
 }
 
@@ -144,6 +154,7 @@
 
 #pragma mark - 接收消息
 - (void)receiveMessage:(MQTTMessage*)message {
+    __weak typeof (self) wSelf = self;
     NSString* msg = [[NSString alloc] initWithData:message.payload encoding:NSUTF8StringEncoding];
     if (msg && msg.length > 0) {
         NSError *error = nil;
@@ -191,7 +202,9 @@
         }
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(receiveMessage:)]) {
-            [self.delegate receiveMessage:baseMessage];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [wSelf.delegate receiveMessage:baseMessage];
+            });
         }
         
         [[NSNotificationCenter defaultCenter] postNotificationName:JxbIMNewMessageNotification object:baseMessage];

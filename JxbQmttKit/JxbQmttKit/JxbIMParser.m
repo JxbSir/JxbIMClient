@@ -29,9 +29,9 @@ Class nsArrayClass;
                 continue;
             }
             
-            if ([JxbIMRuntimeHelper isPropertyReadOnly:[self class] propertyName:key]) {
-                continue;
-            }
+//            if ([JxbIMRuntimeHelper isPropertyReadOnly:[self class] propertyName:key]) {
+//                continue;
+//            }
 			
 			// handle dictionary
 			if ([value isKindOfClass:nsDictionaryClass]) {
@@ -88,6 +88,9 @@ Class nsArrayClass;
                                 bConvertSuccess = YES;
                                 value = [NSNumber numberWithInteger:((NSString*)value).integerValue];
                             }
+                        }
+                        if (des_class == nil) {
+                            bConvertSuccess = YES;
                         }
                         
                         //对应类型转换失败

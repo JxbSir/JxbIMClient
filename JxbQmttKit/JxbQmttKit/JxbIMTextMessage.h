@@ -10,4 +10,6 @@
 
 @interface JxbIMTextMessage : JxbIMBaseMessage
 
+
+@property (nonatomic, strong) NSString  *text;
 @end

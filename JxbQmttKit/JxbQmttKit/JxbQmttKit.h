@@ -9,3 +9,12 @@
 
 #import <JxbQmttKit/JxbQmttClient.h>
 #import <JxbQmttKit/JxbQmttCode.h>
+#import <JxbQmttKit/JxbIMUser.h>
+#import <JxbQmttKit/JxbIMBaseMessage.h>
+#import <JxbQmttKit/JxbIMTextMessage.h>
+#import <JxbQmttKit/JxbIMImageMessage.h>
+#import <JxbQmttKit/JxbIMLocationMessage.h>
+#import <JxbQmttKit/JxbIMInputingMessage.h>
+#import <JxbQmttKit/JxbIMNotifyMessage.h>
+#import <JxbQmttKit/JxbIMSystemMessage.h>
+#import <JxbQmttKit/JxbIMCustomMessage.h>

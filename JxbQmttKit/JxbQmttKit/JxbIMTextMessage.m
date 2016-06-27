@@ -10,4 +10,12 @@
 
 @implementation JxbIMTextMessage
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _msgType = JxbIM_Text;
+    }
+    return self;
+}
+
 @end

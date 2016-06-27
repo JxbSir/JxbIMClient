@@ -7,7 +7,15 @@
 //
 
 #import "JxbIMBaseMessage.h"
+#import "JxbIMUser.h"
 
 @implementation JxbIMBaseMessage
 
++ (Class)toUser_class {
+    return [JxbIMUser class];
+}
+
++ (Class)fromUser_class {
+    return [JxbIMUser class];
+}
 @end

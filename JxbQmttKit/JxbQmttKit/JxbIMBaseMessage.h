@@ -54,7 +54,9 @@ typedef NS_ENUM(NSInteger,JxbIMMsgType) {
 };
 
 @interface JxbIMBaseMessage : JxbIMParser
-
+{
+    JxbIMMsgType    _msgType;
+}
 //聊天唯一标识
 @property (nonatomic, strong) NSString  *topicId;
 

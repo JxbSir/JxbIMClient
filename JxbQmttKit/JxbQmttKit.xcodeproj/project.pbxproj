@@ -38,35 +38,35 @@
 		D081C6961D1E4AAA00C5359A /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6731D1E4AAA00C5359A /* util_mosq.h */; };
 		D081C6971D1E4AAA00C5359A /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = D081C6741D1E4AAA00C5359A /* will_mosq.c */; };
 		D081C6981D1E4AAA00C5359A /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6751D1E4AAA00C5359A /* will_mosq.h */; };
-		D081C69A1D1E4AAA00C5359A /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6781D1E4AAA00C5359A /* MQTTKit.h */; };
+		D081C69A1D1E4AAA00C5359A /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6781D1E4AAA00C5359A /* MQTTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D081C69B1D1E4AAA00C5359A /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D081C6791D1E4AAA00C5359A /* MQTTKit.m */; };
 		D081C6A11D1E4B2B00C5359A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D081C6A01D1E4B2B00C5359A /* Foundation.framework */; };
 		D081C6A51D1E4D2400C5359A /* JxbQmttClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6A31D1E4D2400C5359A /* JxbQmttClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D081C6A61D1E4D2400C5359A /* JxbQmttClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D081C6A41D1E4D2400C5359A /* JxbQmttClient.m */; };
 		D081C6A81D1E546F00C5359A /* JxbQmttCode.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6A71D1E53D700C5359A /* JxbQmttCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0B79C5D1D20E6C400B78A20 /* JxbIMBaseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C5B1D20E6C400B78A20 /* JxbIMBaseMessage.h */; };
+		D0B79C5D1D20E6C400B78A20 /* JxbIMBaseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C5B1D20E6C400B78A20 /* JxbIMBaseMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C5E1D20E6C400B78A20 /* JxbIMBaseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C5C1D20E6C400B78A20 /* JxbIMBaseMessage.m */; };
-		D0B79C611D20E6DD00B78A20 /* JxbIMTextMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C5F1D20E6DD00B78A20 /* JxbIMTextMessage.h */; };
+		D0B79C611D20E6DD00B78A20 /* JxbIMTextMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C5F1D20E6DD00B78A20 /* JxbIMTextMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C621D20E6DD00B78A20 /* JxbIMTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C601D20E6DD00B78A20 /* JxbIMTextMessage.m */; };
-		D0B79C651D20E70100B78A20 /* JxbIMImageMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C631D20E70100B78A20 /* JxbIMImageMessage.h */; };
+		D0B79C651D20E70100B78A20 /* JxbIMImageMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C631D20E70100B78A20 /* JxbIMImageMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C661D20E70100B78A20 /* JxbIMImageMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C641D20E70100B78A20 /* JxbIMImageMessage.m */; };
-		D0B79C691D20E71100B78A20 /* JxbIMLocationMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C671D20E71100B78A20 /* JxbIMLocationMessage.h */; };
+		D0B79C691D20E71100B78A20 /* JxbIMLocationMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C671D20E71100B78A20 /* JxbIMLocationMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C6A1D20E71100B78A20 /* JxbIMLocationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C681D20E71100B78A20 /* JxbIMLocationMessage.m */; };
-		D0B79C6D1D20E74700B78A20 /* JxbIMNotifyMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C6B1D20E74700B78A20 /* JxbIMNotifyMessage.h */; };
+		D0B79C6D1D20E74700B78A20 /* JxbIMNotifyMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C6B1D20E74700B78A20 /* JxbIMNotifyMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C6E1D20E74700B78A20 /* JxbIMNotifyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C6C1D20E74700B78A20 /* JxbIMNotifyMessage.m */; };
-		D0B79C711D20E75E00B78A20 /* JxbIMSystemMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C6F1D20E75E00B78A20 /* JxbIMSystemMessage.h */; };
+		D0B79C711D20E75E00B78A20 /* JxbIMSystemMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C6F1D20E75E00B78A20 /* JxbIMSystemMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C721D20E75E00B78A20 /* JxbIMSystemMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C701D20E75E00B78A20 /* JxbIMSystemMessage.m */; };
-		D0B79C751D20E7DB00B78A20 /* JxbIMCustomMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C731D20E7DB00B78A20 /* JxbIMCustomMessage.h */; };
+		D0B79C751D20E7DB00B78A20 /* JxbIMCustomMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C731D20E7DB00B78A20 /* JxbIMCustomMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C761D20E7DB00B78A20 /* JxbIMCustomMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C741D20E7DB00B78A20 /* JxbIMCustomMessage.m */; };
-		D0B79C791D20ECAA00B78A20 /* JxbIMUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C771D20ECAA00B78A20 /* JxbIMUser.h */; };
+		D0B79C791D20ECAA00B78A20 /* JxbIMUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C771D20ECAA00B78A20 /* JxbIMUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C7A1D20ECAA00B78A20 /* JxbIMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C781D20ECAA00B78A20 /* JxbIMUser.m */; };
-		D0B79C7D1D210B6500B78A20 /* NSDictionary+Json.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C7B1D210B6500B78A20 /* NSDictionary+Json.h */; };
+		D0B79C7D1D210B6500B78A20 /* NSDictionary+Json.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C7B1D210B6500B78A20 /* NSDictionary+Json.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C7E1D210B6500B78A20 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C7C1D210B6500B78A20 /* NSDictionary+Json.m */; };
-		D0B79C841D210BBA00B78A20 /* JxbIMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C801D210BBA00B78A20 /* JxbIMParser.h */; };
+		D0B79C841D210BBA00B78A20 /* JxbIMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C801D210BBA00B78A20 /* JxbIMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C851D210BBA00B78A20 /* JxbIMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C811D210BBA00B78A20 /* JxbIMParser.m */; };
-		D0B79C861D210BBA00B78A20 /* JxbIMRuntimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C821D210BBA00B78A20 /* JxbIMRuntimeHelper.h */; };
+		D0B79C861D210BBA00B78A20 /* JxbIMRuntimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C821D210BBA00B78A20 /* JxbIMRuntimeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C871D210BBA00B78A20 /* JxbIMRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C831D210BBA00B78A20 /* JxbIMRuntimeHelper.m */; };
-		D0B79C8A1D2110E500B78A20 /* JxbIMInputingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C881D2110E500B78A20 /* JxbIMInputingMessage.h */; };
+		D0B79C8A1D2110E500B78A20 /* JxbIMInputingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C881D2110E500B78A20 /* JxbIMInputingMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C8B1D2110E500B78A20 /* JxbIMInputingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C891D2110E500B78A20 /* JxbIMInputingMessage.m */; };
 /* End PBXBuildFile section */
 
@@ -284,29 +284,29 @@
 				D081C6A51D1E4D2400C5359A /* JxbQmttClient.h in Headers */,
 				D0B79C5D1D20E6C400B78A20 /* JxbIMBaseMessage.h in Headers */,
 				D081C6A81D1E546F00C5359A /* JxbQmttCode.h in Headers */,
-				D081C6821D1E4AAA00C5359A /* messages_mosq.h in Headers */,
 				D0B79C711D20E75E00B78A20 /* JxbIMSystemMessage.h in Headers */,
 				D0B79C751D20E7DB00B78A20 /* JxbIMCustomMessage.h in Headers */,
+				D0B79C611D20E6DD00B78A20 /* JxbIMTextMessage.h in Headers */,
+				D0B79C6D1D20E74700B78A20 /* JxbIMNotifyMessage.h in Headers */,
+				D0B79C651D20E70100B78A20 /* JxbIMImageMessage.h in Headers */,
+				D081C69A1D1E4AAA00C5359A /* MQTTKit.h in Headers */,
+				D0B79C7D1D210B6500B78A20 /* NSDictionary+Json.h in Headers */,
+				D0B79C841D210BBA00B78A20 /* JxbIMParser.h in Headers */,
+				D0B79C861D210BBA00B78A20 /* JxbIMRuntimeHelper.h in Headers */,
+				D0B79C8A1D2110E500B78A20 /* JxbIMInputingMessage.h in Headers */,
+				D0B79C791D20ECAA00B78A20 /* JxbIMUser.h in Headers */,
+				D0B79C691D20E71100B78A20 /* JxbIMLocationMessage.h in Headers */,
+				D081C6821D1E4AAA00C5359A /* messages_mosq.h in Headers */,
 				D081C6921D1E4AAA00C5359A /* time_mosq.h in Headers */,
 				D081C68F1D1E4AAA00C5359A /* send_mosq.h in Headers */,
 				D081C68A1D1E4AAA00C5359A /* read_handle.h in Headers */,
-				D081C69A1D1E4AAA00C5359A /* MQTTKit.h in Headers */,
-				D0B79C611D20E6DD00B78A20 /* JxbIMTextMessage.h in Headers */,
-				D0B79C6D1D20E74700B78A20 /* JxbIMNotifyMessage.h in Headers */,
 				D081C6841D1E4AAA00C5359A /* mosquitto.h in Headers */,
-				D0B79C651D20E70100B78A20 /* JxbIMImageMessage.h in Headers */,
 				D081C67B1D1E4AAA00C5359A /* config.h in Headers */,
-				D0B79C8A1D2110E500B78A20 /* JxbIMInputingMessage.h in Headers */,
 				D081C6851D1E4AAA00C5359A /* mosquitto_internal.h in Headers */,
 				D081C6981D1E4AAA00C5359A /* will_mosq.h in Headers */,
 				D081C6941D1E4AAA00C5359A /* tls_mosq.h in Headers */,
 				D081C6491D1E4A6400C5359A /* JxbQmttKit.h in Headers */,
-				D0B79C791D20ECAA00B78A20 /* JxbIMUser.h in Headers */,
-				D0B79C691D20E71100B78A20 /* JxbIMLocationMessage.h in Headers */,
 				D081C67E1D1E4AAA00C5359A /* logging_mosq.h in Headers */,
-				D0B79C7D1D210B6500B78A20 /* NSDictionary+Json.h in Headers */,
-				D0B79C861D210BBA00B78A20 /* JxbIMRuntimeHelper.h in Headers */,
-				D0B79C841D210BBA00B78A20 /* JxbIMParser.h in Headers */,
 				D081C6801D1E4AAA00C5359A /* memory_mosq.h in Headers */,
 				D081C6861D1E4AAA00C5359A /* mqtt3_protocol.h in Headers */,
 				D081C6961D1E4AAA00C5359A /* util_mosq.h in Headers */,
