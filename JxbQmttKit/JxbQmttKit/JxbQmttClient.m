@@ -20,7 +20,22 @@
 #import "JxbIMCustomMessage.h"
 #import "NSDictionary+Json.h"
 
+#import <Realm/Realm.h>
+
+
+// Dog model
+@interface Dog : RLMObject
+@property NSString *name;
+@property NSInteger age;
+@end
+
+// Implementation
+@implementation Dog
+@end
+
 @interface JxbQmttClient()
+
+@property (nonatomic, strong) NSURL         *realmUrl;
 /**
  *  MQTT
  */
@@ -47,7 +62,22 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
- 
+        RLMRealmConfiguration *configuration = [RLMRealmConfiguration defaultConfiguration];
+        NSURL* url = [NSURL URLWithString:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches/JxbIMClient/chat.realm"]];
+        self.realmUrl = url;
+        configuration.fileURL = url;
+        
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        // You only need to do this once (per thread)
+        
+        
+        Dog* msg = [[Dog alloc] init];
+        msg.name = @"test";
+        msg.age = 20;
+        // Add to Realm with transaction
+        [realm beginWriteTransaction];
+        [realm addObject:msg];
+        [realm commitWriteTransaction];
     }
     return self;
 }

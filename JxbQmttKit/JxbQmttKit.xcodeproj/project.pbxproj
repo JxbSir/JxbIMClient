@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00DB88A1D213C6400495521 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00DB8891D213C6400495521 /* Realm.framework */; };
+		D00DB88C1D213DAC00495521 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D00DB8891D213C6400495521 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D081C6491D1E4A6400C5359A /* JxbQmttKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6481D1E4A6400C5359A /* JxbQmttKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D081C67B1D1E4AAA00C5359A /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6581D1E4AAA00C5359A /* config.h */; };
 		D081C67C1D1E4AAA00C5359A /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = D081C6591D1E4AAA00C5359A /* dummypthread.h */; };
@@ -70,7 +72,21 @@
 		D0B79C8B1D2110E500B78A20 /* JxbIMInputingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C891D2110E500B78A20 /* JxbIMInputingMessage.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D00DB88B1D213DA700495521 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D00DB88C1D213DAC00495521 /* Realm.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D00DB8891D213C6400495521 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		D081C6451D1E4A6400C5359A /* JxbQmttKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JxbQmttKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D081C6481D1E4A6400C5359A /* JxbQmttKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JxbQmttKit.h; sourceTree = "<group>"; };
 		D081C64A1D1E4A6400C5359A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00DB88A1D213C6400495521 /* Realm.framework in Frameworks */,
 				D081C6A11D1E4B2B00C5359A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +168,7 @@
 		D081C63B1D1E4A6400C5359A = {
 			isa = PBXGroup;
 			children = (
+				D00DB8891D213C6400495521 /* Realm.framework */,
 				D081C6A01D1E4B2B00C5359A /* Foundation.framework */,
 				D081C6471D1E4A6400C5359A /* JxbQmttKit */,
 				D081C6461D1E4A6400C5359A /* Products */,
@@ -325,6 +343,7 @@
 				D081C6411D1E4A6400C5359A /* Frameworks */,
 				D081C6421D1E4A6400C5359A /* Headers */,
 				D081C6431D1E4A6400C5359A /* Resources */,
+				D00DB88B1D213DA700495521 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -516,6 +535,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = JxbQmttKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -534,6 +557,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = JxbQmttKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
