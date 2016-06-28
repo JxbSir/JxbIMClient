@@ -37,6 +37,9 @@
         self.txtRec.text = [NSString stringWithFormat:@"连接失败...\n%@",self.txtRec.text];
     }];
     
+    [[JxbQmttClient sharedInstance] loadAllMsg:@"123" completeBlock:^(NSArray * _Nullable messages) {
+        
+    }];
 }
 
 - (IBAction)btnSubscribe:(id)sender {
@@ -60,13 +63,15 @@
     JxbIMTextMessage* message = [[JxbIMTextMessage alloc] init];
     message.text = _txtSend.text;
     message.topicId = _txtTopic.text;
-    message.fromUser = [JxbIMUser getUser:self.clientId nick:self.clientId iconUrl:nil];
-    [[JxbQmttClient sharedInstance] sendTextMessage:message];
+    message.sendUser = [JxbIMUser getUser:self.clientId nick:self.clientId iconUrl:nil];
+    [[JxbQmttClient sharedInstance] sendTextMessage:message completeBlcok:^(bool bSuccess) {
+        
+    }];
 }
 
 - (void)receiveMessage:(JxbIMBaseMessage *)message {
     JxbIMTextMessage* msg = (JxbIMTextMessage*)message;
-    if ([message.fromUser.userId isEqualToString:self.clientId]) {
+    if ([message.sendUser.userId isEqualToString:self.clientId]) {
         self.txtRec.text = [NSString stringWithFormat:@"发送消息:%@\n%@",msg.text,self.txtRec.text];
     }
     else {

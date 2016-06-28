@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Peter. All rights reserved.
 //
 
-#import "JxbIMBaseMessage.h"
+#import "JxbIMTextMessage.h"
 
-@interface JxbIMNotifyMessage : JxbIMBaseMessage
+@interface JxbIMNotifyMessage : JxbIMTextMessage
 
 @end

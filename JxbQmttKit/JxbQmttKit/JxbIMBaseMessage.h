@@ -32,13 +32,17 @@ typedef NS_ENUM(NSInteger,JxbIMMsgType) {
      */
     JxbIM_Location = 3,
     /**
+     *  通知消息
+     */
+    JxbIM_Notify = 4,
+    /**
      *  语音
      */
-    JxbIM_Voice = 4,
+    JxbIM_Voice = 5,
     /**
      *  视频
      */
-    JxbIM_Video = 5,
+    JxbIM_Video = 6,
     /**
      *  震屏
      */
@@ -60,11 +64,8 @@ typedef NS_ENUM(NSInteger,JxbIMMsgType) {
 //聊天唯一标识
 @property (nonatomic, strong) NSString  *topicId;
 
-//目标用户
-@property (nonatomic, strong) JxbIMUser *toUser;
-
 //发送用户
-@property (nonatomic, strong) JxbIMUser *fromUser;
+@property (nonatomic, strong) JxbIMUser *sendUser;
 
 //消息类型
 @property (nonatomic, assign, readonly) JxbIMMsgType    msgType;

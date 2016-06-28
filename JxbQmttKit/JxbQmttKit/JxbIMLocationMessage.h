@@ -10,4 +10,13 @@
 
 @interface JxbIMLocationMessage : JxbIMBaseMessage
 
+/**
+ *  纬度
+ */
+@property (nonatomic, assign) double latitude;
+
+/**
+ *  经度
+ */
+@property (nonatomic, assign) double longitude;
 @end

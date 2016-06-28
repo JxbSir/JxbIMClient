@@ -42,7 +42,7 @@
  *  @param successBlock 连接成功回调
  *  @param failureBlock 连接失败回调
  */
-- (void)connect:(NSString * __nonnull)host clentId:(NSString* __nonnull)clentId successBlock:(void(^ __nullable)(void) )successBlock failureBlock:(void(^ __nullable)(JxbConnectionCode statusCode))failureBlock;
+- (void)connect:(NSString * __nonnull)host clentId:(NSString* __nonnull)clentId successBlock:(void(^ __nullable)(void))successBlock failureBlock:(void(^ __nullable)(JxbConnectionCode statusCode))failureBlock;
 
 /**
  *  断开服务器
@@ -64,52 +64,60 @@
 - (void)unsubscribe:(NSArray * __nonnull)topics;
 
 /**
+ *  读取本地历史记录
+ *
+ *  @param topic         topic，若nil，则读取全部
+ *  @param completeBlock 读取记录回调，返回的是相应MsgType的JxbIM[*]Message数组
+ */
+- (void)loadAllMsg:(NSString * __nullable)topic completeBlock:(void(^ __nonnull)( NSArray * _Nullable messages ))completeBlock;
+
+/**
  *  发送文本消息
  *
  *  @param message 消息结构
  */
-- (void)sendTextMessage:(JxbIMTextMessage* __nonnull)message;
+- (void)sendTextMessage:(JxbIMTextMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 /**
  *  发送图片信息
  *
  *  @param message 消息结构
  */
-- (void)sendImageMessage:(JxbIMImageMessage* __nonnull)message;
+- (void)sendImageMessage:(JxbIMImageMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 /**
  *  发送位置信息
  *
  *  @param message 消息结构
  */
-- (void)sendLocationMessage:(JxbIMLocationMessage* __nonnull)message;
-
-/**
- *  发送正在输入信息
- *
- *  @param message 消息结构
- */
-- (void)sendInputingMessage:(JxbIMInputingMessage* __nonnull)message;
+- (void)sendLocationMessage:(JxbIMLocationMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 /**
  *  发送通知信息
  *
  *  @param message 消息结构
  */
-- (void)sendNotifyMessage:(JxbIMNotifyMessage* __nonnull)message;
+- (void)sendNotifyMessage:(JxbIMNotifyMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
+
+/**
+ *  发送正在输入信息
+ *
+ *  @param message 消息结构
+ */
+//- (void)sendInputingMessage:(JxbIMInputingMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 /**
  *  发送系统信息
  *
  *  @param message 消息结构
  */
-- (void)sendSystemMessage:(JxbIMSystemMessage* __nonnull)message;
+//- (void)sendSystemMessage:(JxbIMSystemMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 /**
  *  发送自定义信息
  *
  *  @param message 消息结构
  */
-- (void)sendCustomMessage:(JxbIMCustomMessage* __nonnull)message;
+//- (void)sendCustomMessage:(JxbIMCustomMessage* __nonnull)message completeBlcok:(void(^ __nullable)(bool bSuccess))completeBlcok;
 
 @end

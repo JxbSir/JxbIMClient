@@ -70,6 +70,8 @@
 		D0B79C871D210BBA00B78A20 /* JxbIMRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C831D210BBA00B78A20 /* JxbIMRuntimeHelper.m */; };
 		D0B79C8A1D2110E500B78A20 /* JxbIMInputingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B79C881D2110E500B78A20 /* JxbIMInputingMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B79C8B1D2110E500B78A20 /* JxbIMInputingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B79C891D2110E500B78A20 /* JxbIMInputingMessage.m */; };
+		D0FB77661D2214C200165210 /* JxbRealmMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FB77641D2214C200165210 /* JxbRealmMessage.h */; };
+		D0FB77671D2214C200165210 /* JxbRealmMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FB77651D2214C200165210 /* JxbRealmMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +152,8 @@
 		D0B79C831D210BBA00B78A20 /* JxbIMRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbIMRuntimeHelper.m; sourceTree = "<group>"; };
 		D0B79C881D2110E500B78A20 /* JxbIMInputingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbIMInputingMessage.h; sourceTree = "<group>"; };
 		D0B79C891D2110E500B78A20 /* JxbIMInputingMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbIMInputingMessage.m; sourceTree = "<group>"; };
+		D0FB77641D2214C200165210 /* JxbRealmMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbRealmMessage.h; sourceTree = "<group>"; };
+		D0FB77651D2214C200165210 /* JxbRealmMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbRealmMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,8 @@
 				D0B79C7C1D210B6500B78A20 /* NSDictionary+Json.m */,
 				D0B79C771D20ECAA00B78A20 /* JxbIMUser.h */,
 				D0B79C781D20ECAA00B78A20 /* JxbIMUser.m */,
+				D0FB77641D2214C200165210 /* JxbRealmMessage.h */,
+				D0FB77651D2214C200165210 /* JxbRealmMessage.m */,
 				D0B79C5B1D20E6C400B78A20 /* JxbIMBaseMessage.h */,
 				D0B79C5C1D20E6C400B78A20 /* JxbIMBaseMessage.m */,
 				D0B79C5F1D20E6DD00B78A20 /* JxbIMTextMessage.h */,
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D081C6881D1E4AAA00C5359A /* net_mosq.h in Headers */,
+				D0FB77661D2214C200165210 /* JxbRealmMessage.h in Headers */,
 				D081C6A51D1E4D2400C5359A /* JxbQmttClient.h in Headers */,
 				D0B79C5D1D20E6C400B78A20 /* JxbIMBaseMessage.h in Headers */,
 				D081C6A81D1E546F00C5359A /* JxbQmttCode.h in Headers */,
@@ -404,6 +411,7 @@
 				D081C6931D1E4AAA00C5359A /* tls_mosq.c in Sources */,
 				D081C6871D1E4AAA00C5359A /* net_mosq.c in Sources */,
 				D081C69B1D1E4AAA00C5359A /* MQTTKit.m in Sources */,
+				D0FB77671D2214C200165210 /* JxbRealmMessage.m in Sources */,
 				D081C68E1D1E4AAA00C5359A /* send_mosq.c in Sources */,
 				D0B79C6A1D20E71100B78A20 /* JxbIMLocationMessage.m in Sources */,
 				D081C6811D1E4AAA00C5359A /* messages_mosq.c in Sources */,

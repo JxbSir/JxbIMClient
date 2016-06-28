@@ -10,4 +10,8 @@
 
 @interface JxbIMImageMessage : JxbIMBaseMessage
 
+/**
+ *  图片Data
+ */
+@property (nonatomic, strong) NSData    *imageData;
 @end
