@@ -301,6 +301,7 @@
         JxbIMBaseMessage* baseMessage = [self parseMessage:msg];
         if (!baseMessage)
             return;
+        [self addMessage2DB:baseMessage];
         if (self.delegate && [self.delegate respondsToSelector:@selector(receiveMessage:)]) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [wSelf.delegate receiveMessage:baseMessage];
